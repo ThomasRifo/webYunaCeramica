@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="javascript.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="logo">
+      <a href="index.html"><img src="yunalogo2.png" alt="Yuna Ceramica" /></a>
+    </div>
+    <header class="encabezado">
+      <!-- MENÚ DE NAVEGACIÓN -->
+
+      <nav class="menu">
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="sobreMi.html">Sobre mi</a></li>
+          <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li>
+            <img
+              src="/imagenes/carrito.png"
+              alt=""
+              class="imgCarrito"
+              onclick="abrirVentana()"
+            /><span id="contadorCarrito">0</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="ventanaEmergente" class="ventanaEmergente">
+      <h2>No hay productos en el carrito.</h2>
+      <ul id="listaCarrito"></ul>
+    </div>
+
+    <section class="pregFrecuentes">
+      <h2 class="tituloPreg">PREGUNTAS FRECUENTES</h2>
+      <h4 class="cuidarPreg">¿Cómo debo cuidar mis piezas?</h4>
+      <p class="parrafoPreg">
+        Para que disfrutes tus piezas por mucho tiempo te recomendamos los
+        siguientes cuidados:
+      </p>
+
+      <ul class="pregFreq">
+        <li>
+          <p class="parrafoPreg">
+            <strong>Todas las piezas son aptas para microondas/horno</strong>,
+            pero tené cuidado con el choque térmico! Trata de no someter a tus
+            piezas a grandes diferencias térmicas. Por ejemplo, si las utilizas
+            para cocinar o servir alimentos, debes tener cuidado de no
+            introducir algo muy frío si la pieza está caliente, o de apoyarla
+            sobre mármol o granito cuando contiene algo muy caliente (por
+            ejemplo al sacarla del horno).
+          </p>
+        </li>
+        <li>
+          <p><strong>La cerámica es frágil a los golpes</strong>, ¡Así que trátala
+          con mucho cuidado!</p>
+        </li>
+        <li><p><strong>No dejes tus piezas cerámicas sumergidas en agua,</strong> en general tienen una parte que no está esmaltada y absorbe agua, esto puede generar problemas de craquelado en los esmaltes. Te recomendamos que laves tus piezas a mano y que evites las esponjas de alambre ya que puede rayar el esmalte.</p></li>
+      </ul>
+      <h4 class="cuidarPreg">¿Qué pasa si mi pieza se craquela?</h4>
+      <p class="parrafoPreg">No te asustes! El craquelado en las piezas de cerámica es completamente normal con el paso del tiempo y no afecta su funcionamiento. Para retardar el craquelado de tu pieza te recomendamos que sigas nuestras recomendaciones de cuidados.</p>
+
+      <h4 class="cuidarPreg">¿Realizan pedidos personalizados?</h4>
+      <p class="parrafoPreg">Realizamos pedidos personalizados a partir de tres piezas, podes cambiar el diseño o el color de las piezas que producimos a tu gusto!</p>
+
+      <h4 class="cuidarPreg">Me compré piezas de la misma cápsula pero no son idénticas ¿Por qué?</h4>
+      <p class="parrafoPreg">Nuestras piezas son totalmente artesanales, desde su construcción hasta el diseño de las mismas, por eso no hay dos piezas iguales, ni misma tonalidad, ni misma intensidad, ni diseño. Y eso es algo que nos caracteriza!</p>
+    </section>
+  </body>
+</html>

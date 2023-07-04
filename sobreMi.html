@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="yunalogo2.png" alt="Yuna Ceramica"></a>
+
+    </div>
+    <header class="encabezado">
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+
+        <nav class="menu">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="productos.html">Productos</a> </li>
+                <li><a href="sobreMi.html">Sobre mi</a> </li>
+                <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a> </li>
+                <li><a href="contacto.html">Contacto</a> </li>
+                <li><img src="/imagenes/carrito.png" alt="" class="imgCarrito" onclick="abrirVentana()"><span id="contadorCarrito" >0</span></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <div id="ventanaEmergente" class="ventanaEmergente">
+        <h2>No hay productos en el carrito.</h2>
+        <ul id="listaCarrito"></ul>
+      </div>
+</body>
+
+</html>

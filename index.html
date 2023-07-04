@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="#"><img src="yunalogo2.png" alt="Yuna Ceramica"></a>
+
+    </div>
+    <header class="encabezado">
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+
+        <nav class="menu">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="productos.html">Productos</a> </li>
+                <li><a href="sobreMi.html">Sobre mi</a> </li>
+                <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a> </li>
+                <li><a href="contacto.html">Contacto</a> </li>
+                <li><img src="/imagenes/carrito.png" alt="" class="imgCarrito" onclick="abrirVentana()"><span id="contadorCarrito" >0</span></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <div id="ventanaEmergente" class="ventanaEmergente">
+        <h2 class="tituloCarrito">No hay productos en el carrito.</h2>
+        <button class="cerrarVentana" id="cerrarVentana" onclick="cerrarVentana()">X</button>
+        <ul id="listaCarrito"></ul>
+      </div>
+
+
+
+    <section class="contenedorPrincipal">
+        <div class="categoriasPrincipales">
+            <h3>Categorías principales</h3>
+
+            <div class="itemsCategoriasPrincipales">
+                <a href="productos/tazas.html">
+                    <h4>Tazas</h4>
+                </a>
+                <a href="productos/mates.html">
+                    <h4>Mates</h4>
+                </a>
+                <a href="productos/cazuelas.html">
+                    <h4>Cazuelas</h4>
+                </a>
+                <a href="productos/sets.html">
+                    <h4>Sets</h4>
+                </a>
+            </div>
+        </div>
+
+        <div class="informacion">
+            <div class="seccion">
+                <img src="envio.png" alt="Envio">
+                <h4>ENVIOS GRATIS<br> a partir de $15.000</h4>
+            </div>
+            <div class="seccion">
+                <img src="tarjeta.png" alt="Tarjeta">
+                <h4>3 CUOTAS SIN INTERES<br> con tarjetas de crédito</h4>
+            </div>
+            <div class="seccion">
+
+                <img src="banco.png" alt="Banco">
+                <h4>10% DE DESCUENTO
+                    <br>con transferencia bancaria
+                </h4>
+            </div>
+        </div>
+
+
+    </section>
+    <h3 class="tituloProductos">TODOS LOS PRODUCTOS</h3>
+    <section class="productos">
+
+
+        <div class="producto">
+            <div class="contenedor-imagen">
+              <img src="imagenes/tazanegraazul.jpg" class="imgProducto" alt="Taza">
+              <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">TAZA azul y negro</h4>
+            <p class="precioProducto">$3600</p>
+          </div>
+          <div class="producto">
+            <div class="contenedor-imagen">
+              <img src="imagenes/tazarosa.jpg" class="imgProducto" alt="Taza">
+              <img src="imagenes/agregarcarrito.png" alt=""  id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">TAZA rosa</h4>
+            <p class="precioProducto">$3600</p>
+          </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/cazuelaceleste.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">CAZUELA celeste</h4>
+            <p class="precioProducto">$2900</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/cazuelarosa.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">CAZUELA rosa</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/mateazul.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">MATE azul</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/mateflores.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">MATE flores</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/materosa.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">MATE rosa</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/tostadanegrayazul.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">TOSTADA negra y azul</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/tostadaoso.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">TOSTADA oso</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/tostadarosa.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">TOSTADA rosa</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/tostadaymateazul.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">SET salpicado azul</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+        <div class="producto">
+            <div class="contenedor-imagen">
+            <img src="imagenes/tostadaymateflores.jpg" class="imgProducto" alt="Taza">
+            <img src="imagenes/agregarcarrito.png" alt="" id="agregarCarrito" onclick="agregarCarrito(event)">
+            </div>
+            <h4 class="nombreProducto">SET flores</h4>
+            <p class="precioProducto">$3600</p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
