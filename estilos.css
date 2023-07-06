@@ -10,6 +10,8 @@ body {
     position: relative;
 }
 
+
+
 .encabezado{
     position: sticky;
     top: 0;
@@ -390,4 +392,59 @@ body {
 .pregFrecuentes p{
   margin-left: 18em;
   margin-right: 15em;
+}
+
+
+.botonComprar{
+  width: 9em;
+  height: 2em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  border-color: rgb(28, 158, 28);
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  border-radius: .3em;
+  transition: .2s;
+}
+
+.botonComprar:hover{
+  cursor: pointer;
+  background-color: rgb(28, 158, 28);
+  color: white;
+}
+
+.tituloSobreMi{
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.5em;
+}
+
+.sobreMi {
+  display: flex;
+  justify-content: center;
+}
+
+.parrafoContenedor {
+  flex: 1;
+  margin-top: 8em;
+  margin-left: 15em;
+  justify-content: space-between;
+}
+
+.imgContenedor {
+  flex: 1;
+  text-align: right;
+  margin-right: 15em;
+  margin-top: 3em;
+}
+
+.imgContenedor img{
+  height: 26em;
+  border: 0.2em solid #ffc0cb;
+  transition: .4s;
+}
+
+.imgContenedor img:hover{
+  height: 28em;
 }

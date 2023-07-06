@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <title>Document</title>
 </head>
@@ -41,9 +42,23 @@
     </header>
 
     <div id="ventanaEmergente" class="ventanaEmergente">
-        <h2>No hay productos en el carrito.</h2>
+        <h2 class="tituloCarrito">No hay productos en el carrito.</h2>
+        <button class="cerrarVentana" id="cerrarVentana" onclick="cerrarVentana()">X</button>
         <ul id="listaCarrito"></ul>
       </div>
+
+
+
+      <section class="sobreMi">
+ 
+      <div class="parrafoContenedor">
+        <h2 class="tituloSobreMi">¿Quien soy?</h2><p class="parrafoSobreMi">Mi nombre es Ana, soy estudiante de psicología. En 2019 comencé cerámica recreativa como hobby y me  fui adentrando mas en el mundo de la cerámica y la decoración, empece haciendo productos para mi y mis allegados hasta que en 2023 decidí anotarme en una feria municipal de Cipolletti para vender mis primeros productos y al ver el cariño a mis piezas por parte de la gente que pasaba por el stand, cree este pequeño emprendimiento con el cual me presento a todas las ferias de la ciudad y vendo online a través de la web e instagram. 
+      </p>
+      </div>
+      <div class="imgContenedor">
+        <img src="imagenes/ceramica.jpg" alt="">
+      </div>
+    </section>
 </body>
 
 </html>

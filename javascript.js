@@ -113,6 +113,8 @@ function actualizarCarrito() {
     productoHTML.appendChild(botonEliminar);
     productosCarrito.appendChild(productoHTML); //y todo el producto html agregado se lo agrego al productosCarrito que es la ventana emergente
 
+    
+
   }
 
   //Agrego un span con el total del valor del carrito
@@ -121,7 +123,37 @@ function actualizarCarrito() {
   totalHTML.textContent = "Total: $" + total;
 
   productosCarrito.appendChild(totalHTML);
+
+  if(carrito.length == 0){
+    productosCarrito.innerHTML = "<h2 class='tituloCarrito'>No hay productos en el carrito.</h2><button class='cerrarVentana' id='cerrarVentana' onclick='cerrarVentana()'>X</button>"
+  }
+
+  if (carrito.length > 0) {
+    var botonComprar = document.createElement("button");
+    botonComprar.textContent = "Comprar";
+    botonComprar.classList.add("botonComprar");
+
+    botonComprar.addEventListener("click", function () {
+      carrito = [];
+      
+
+      var contador = document.getElementById("contadorCarrito");
+      contador.textContent = 0;
+      actualizarCarrito();
+
+      botonComprar.remove();
+
+      alertCompra();
+      
+      
+      // Eliminar el botón "Comprar" después de hacer la compra
+    });
+
+    productosCarrito.appendChild(botonComprar);
+
+  }
 }
+
 
 
 
@@ -189,4 +221,12 @@ function LimpiarFormulario() {
   document.getElementById("telefono").value = "";
   document.getElementById("correo").value = "";
   document.getElementById("textArea").value = "";
+}
+
+
+function alertCompra(){
+  swal({
+    text: 'Compra realizada con éxito!',
+    icon: 'success'
+  })
 }
