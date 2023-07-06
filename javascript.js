@@ -203,9 +203,10 @@ function validarFormulario() {
 
   if (validado) {
     LimpiarFormulario();
-    alert(
-      "Gracias por contactarse con nosotros, responderemos a la brevedad."
-    );
+    swal({
+    title: 'Muchas gracias por contactarse con nosotros, responderemos a la brevedad!',
+    icon: 'success'
+  });
   }
 }
 
@@ -226,7 +227,7 @@ function LimpiarFormulario() {
 
 function alertCompra(){
   swal({
-    text: 'Compra realizada con éxito!',
+    title: 'Compra realizada con éxito!',
     icon: 'success'
   })
 }
